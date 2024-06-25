@@ -66,7 +66,7 @@ with open("./EasyPost Python Scripts/misc.JSON") as data:
                     if item in custItem:
                         del custItem[item]
     
-    if ship["options"]["print_custom"]:
+    if "print_custom" in ship["options"]:
         del ship["options"]["print_custom"]
 
     try:
